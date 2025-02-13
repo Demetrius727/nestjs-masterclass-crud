@@ -1,1 +1,9 @@
-GET http://localhost:3000/app/teste
+POST http://localhost:3000/usuario
+
+content-type: application/json
+
+{
+    "nome": "Dimitri Santos",
+    "email": "dimitrisantos@yahoo.com",
+    "senha": "123456"
+}
