@@ -1,9 +1,26 @@
-POST http://localhost:3000/usuario
+GET http://localhost:3000/usuario
 
+###
+GET http://localhost:3000/usuario/1
+
+###
+DELETE http://localhost:3000/usuario/3
+
+###
+POST http://localhost:3000/usuario
 content-type: application/json
 
 {
-    "nome": "Dimitri Santos",
-    "email": "dimitrisantos@yahoo.com",
-    "senha": "123456"
+    "nome": "Sidney Souza",
+    "email": "sidneysouza@gmail.com",
+    "senha": "345678"
+}
+
+###
+PATCH http://localhost:3000/usuario/4
+content-type: application/json
+
+{
+    "nome": "Sidney Aparecido",
+    "email": "sidney2222souza@gmail.com"
 }
